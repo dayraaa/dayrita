@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita de Maquillaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    background-image: url(producto1.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #ff007f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e6006c;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about, .shop, .contact {
+    margin-bottom: 40px;
+}
+
+.shop {
+    text-align: center;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #ff007f;
+    margin: 10px 0;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background-color: #ff007f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #e6006c;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>¡Descubre Tu Belleza!</h1>
+                <p>Productos de Maquillaje Premium a tu Alcance</p>
+                <a href="#shop" class="btn-primary">Compra Ahora</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#shop">Tienda</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En nuestra tienda de maquillaje, ofrecemos una amplia gama de productos de alta calidad que te ayudarán a resaltar tu belleza natural. Desde bases y correctores hasta sombras y labiales, todo lo que necesitas para un look perfecto lo encontrarás aquí.</p>
+        </section>
+        <section id="shop" class="shop">
+            <h2>Tienda</h2>
+            <div class="product-gallery">
+                <div class="product-card">
+                    <img src="produc1.jpg" alt="Producto 1">
+                    <h3>Paleta de Sombras</h3>
+                    <p>Colores vibrantes y duraderos.</p>
+                    <p class="price">300.00lps</p>
+                    <a href="#" class="btn-primary">Comprar</a>
+                </div>
+                <div class="product-card">
+                    <img src="rubor.jpg" alt="Producto 2">
+                    <h3>Rubor de Maquillaje</h3>
+                    <p>Colores Neutros.</p>
+                    <p class="price">400.00lps</p>
+                    <a href="#" class="btn-primary">Comprar</a>
+                </div>
+                <div class="product-card">
+                    <img src="pesta.webp" alt="Producto 3">
+                    <h3>Pestañas</h3>
+                    <p>Mirada Perfecta.</p>
+                    <p class="price">250.00lps</p>
+                    <a href="#" class="btn-primary">Comprar</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
